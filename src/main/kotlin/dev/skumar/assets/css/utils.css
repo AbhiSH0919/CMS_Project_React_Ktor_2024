@@ -1,0 +1,48 @@
+.grid-body-cols {
+	display: grid;
+	/* grid-template-rows: repeat(auto-fill, 70px); */
+	/* grid-template-columns: 19rem 1fr; */
+	grid-template-columns:
+		[menubar-start] 19rem [menubar-end content-start] repeat(auto-fill, 20px)
+		[content-end];
+	grid-template-rows: 4rem min-content repeat(auto-fill, 100px);
+	grid-auto-rows: min-content;
+	justify-content: center;
+}
+
+.card-color {
+	background-color: #333 !important;
+	background-color: #3333337d !important;
+	color: #fff;
+	box-shadow: 0 0 6px #f0f8ff41;
+}
+
+.hover-effect:hover {
+	background-color: #f0f8ff41 !important;
+}
+
+/* =====QUESTION-SET-CONTAINER===== */
+.grid--1-cols {
+	grid-template-columns: minmax(15rem, 1fr);
+}
+.grid--3-cols,
+.question-set-container.grid--3-cols {
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.queSetModal {
+	height: 100vh;
+	width: 100%;
+	/* background-color: #333 !important; */
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+}
+
+.queSetModal-active {
+	z-index: 99;
+	visibility: visible;
+}
