@@ -1,4 +1,4 @@
-# Content System Management (CMS) Project
+# Content Management System (CMS) Project
 
 ## CMS Project was created using React + Ktor for Server Side Rendring.
 
